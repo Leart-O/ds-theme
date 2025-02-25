@@ -7,5 +7,15 @@
     <title>Document</title>
     <!-- This is from our theme -->
 </head>
-<body>
+
+<?php
+    if(is_front_page()){
+        $ds = array("ds-class", "my-ds- class");
+    }
+    else{
+        $ds = array("not-ds-class");
+    }
+    
+?>
+<body <?php body_class(array("ds-class", "my-ds-class")); ?>>
     <?php wp_nav_menu(array("theme_location"=>"primary")); ?>
