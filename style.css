@@ -15,3 +15,34 @@
 h1{
     color: blue;
 }
+
+
+.post-categories{
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    list-style-type: none;
+
+
+
+}
+
+.contatiner{
+
+    display: flex;
+
+}
+
+.first{
+
+    width: 70%;
+
+}
+
+.second{
+
+    width: 30%;
+
+}

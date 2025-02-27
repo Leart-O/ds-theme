@@ -2,18 +2,17 @@
 
 
 
-    //Template Name: about page  
+    //Template Name: about new  
 
 
 
 
 
 ?>
-
+<?php get_header(); ?>
 
 
 <div class="contatiner">
-
     <div class="first">
 
     <h1>about page posts</h1>
@@ -48,7 +47,7 @@
 
 </div>
 
-<?php get_header(); ?>
+
 
 
 
