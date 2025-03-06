@@ -25,4 +25,27 @@ function ds_set_up(){
 add_action("init","ds_set_up");
 add_theme_support("post-thumbnails");
 
+
+function themename_widgets_init(){
+   register_sidebar( array(
+      'name' => __('Primary Sidebar', 'theme_name'),
+      'id' => 'sidebar_1',
+      'before_widget' => '<aside id="%1$s" class="widget $2$s">',
+      'after_widget' => '</aside>'
+      'before_title' => '<h3 class="widget_title">',
+      'after_title' => '</h3>'
+   ))
+
+   themename_widgets_init(){
+      register_sidebar( array(
+      'name' => __('Secondary Sidebar', 'theme_name'),
+      'id' => 'sidebar_2',
+      'before_widget' => '<aside id="%1$s" class="widget $2$s">',
+      'after_widget' => '</aside>'
+      'before_title' => '<h3 class="widget_title">',
+      'after_title' => '</h3>'
+      ))
+   };
+};
+
 ?>
