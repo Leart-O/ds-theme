@@ -76,7 +76,7 @@
     <aside id="archives" class="widget">
       <h3 class="widget_title"><?php _e('Archives', 'shape');?></h3>
       <ul>
-        <?php wp_get_archive( array('type' => 'monthly'));?>
+        <!-- <?php wp_get_archive( array('type' => 'monthly'));?> -->
       </ul>
     </aside>
 

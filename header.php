@@ -10,16 +10,7 @@
 
 </head>
 
-<?php
-    if(is_front_page()){
-        $ds=array("ds-class","my-ds-class");
-    }else{
-        $ds=array("no-ds-class");
 
-    }
-?>
-<body <?php body_class(array("ds-class","my-ds-class")); ?>>
-    <?php wp_nav_menu(array("theme_location"=>"primary")); ?>
 
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary" >
@@ -57,5 +48,20 @@
       </form>
     </div>
   </div>
-</nav>
+  </nav>
+  
+  <br>
+   
+  <?php
+    if(is_front_page()){
+        $ds=array("ds-class","my-ds-class");
+    }else{
+        $ds=array("no-ds-class");
+
+    }
+?>
+<body <?php body_class(array("ds-class","my-ds-class")); ?>>
+    <?php wp_nav_menu(array("theme_location"=>"primary")); ?>
+    <br>
+
     
