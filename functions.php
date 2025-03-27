@@ -78,4 +78,19 @@ function create_post_type(){
 
 add_action('init','create_post_type');
 
+function movies_taxonomy(){
+   $args = [
+      'labels' => array(
+         'name'=> ('Movie Genre'),
+         'singular_name'=>('Movie Genre'),
+         'add_new_item'=>('Add New Movie Genre'),
+         'edit_item'=>('Edit Movie Genre'),
+      ),
+      'public'=>true,
+      'hierarchical'=>true,
+   ];
+   register_taxonomy('type', array('movie'), $args);
+}
+add_action('init','movies_taxonomy');
+
 ?>
